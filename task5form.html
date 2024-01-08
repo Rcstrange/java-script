@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register here</title>
+    <style>
+       .forms{
+
+        background: grey;
+        position: absolute;
+        padding: 50px;
+        margin-left: 40%;
+        margin-top: 50px;
+        color: greenyellow;
+        border-radius: 10px;
+ 
+         
+       }
+       .f1{
+           padding-bottom: 20px;
+       }
+       form input{
+            display: block;
+            border-color: whitesmoke;
+            width: 200px;
+           
+            
+       }
+       label{
+        font-weight: bold;
+       }
+       .button{
+        background-color:mediumturquoise;
+        color: black;
+        padding: 2px;
+        margin-top: 20px;
+        border-radius: 20px;
+        width: 200px;
+       }
+
+       input[type="checkbox"]{
+         width: 35px;
+         height: 15px;
+         margin-top: 10px;
+       
+         
+       }
+       .check{
+        color: red;
+        font-size: medium;
+       }
+
+       .forms:hover{
+        transform: scale(110%);
+        transition-duration:  450ms;
+        border: 1px green solid;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       }
+       input:focus{
+        outline: none;
+        border-bottom: 1px blueviolet;
+
+       }
+       
+
+
+
+    
+        
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="forms">
+        <h1 style="color: black;" id="head">Register Here</h1>
+    <form id = "valid">
+       
+        
+        <div class="f1">
+        <label for="uname">USERNAME :</label>
+        <input type="text" id="uname" name="uname">
+    </div>
+    <div class="f1">
+        <label for="name">NAME :</label>
+        <input type="text" id="name" name="name">
+    </div>
+    <div class="f1">
+        <label for="email">EMAIL :</label>
+        <input type="email" id="email" name="email">
+    </div>
+    <div class="f1">
+        <label for="pwrd">PASSWORD :</label>
+        <input type="password" id="pwrd" name="pwrd">
+    </div>
+    <div class="check">
+    <label for="agree"><a href="#" style="text-decoration: none; color: red;"> agree to the terms and conditions:</a></label>
+    <input type="checkbox" id="agree" name="agree">
+    </div>
+
+    <br>
+    <button type="button" onclick="validate()" class="button">Submit</button>
+    <input type="reset" class="button" value="RESET">
+    
+    </form>
+    </div>
+    <script src="formscript.js"></script>
+</body>
+</html>
